@@ -8,8 +8,8 @@ terraform {
 
 
 backend "s3" {
-    bucket = "remote-state-pu"
-    key    = "terraform-eks-sg"
+    bucket = "remote-state-pu"  # Replace with your unique bucket name
+    key    = "terraform-eks-sg-rules"
     region = "us-east-1"
     encrypt = true
     use_lockfile = true

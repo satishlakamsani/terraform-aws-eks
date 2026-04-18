@@ -19,7 +19,7 @@ module "db" {
   vpc_security_group_ids = [local.mysql_sg_id]
 
 # DB subnet group
-  create_db_subnet_group = true
+  create_db_subnet_group = false
   db_subnet_group_name = local.database_subnet_group_name
 
   # DB parameter group
